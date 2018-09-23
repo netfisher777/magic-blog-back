@@ -5,16 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.magicvalleyworks.magicblog</groupId>
-    <artifactId>magic-blog-app</artifactId>
+    <artifactId>magic-blog-back</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>magic-blog-app-ear</module>
-        <module>magic-blog-app-web</module>
-        <module>magic-blog-app-service</module>
-        <module>magic-blog-app-dto</module>
-        <module>magic-blog-app-parent</module>
+        <module>magic-blog-ear</module>
+        <module>magic-blog-web</module>
+        <module>magic-blog-service</module>
+        <module>magic-blog-dto</module>
+        <module>magic-blog-parent</module>
     </modules>
 
 

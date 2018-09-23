@@ -1,5 +1,5 @@
 <jboss-deployment-structure>
     <deployment>
-        <module-alias name="deployment.magic-blog-app" />
+        <module-alias name="deployment.magic-blog" />
     </deployment>
 </jboss-deployment-structure>

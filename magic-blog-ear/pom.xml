@@ -3,25 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>magic-blog-app</artifactId>
+        <artifactId>magic-blog-back</artifactId>
         <groupId>com.magicvalleyworks.magicblog</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>magic-blog-app-ear</artifactId>
+    <artifactId>magic-blog-ear</artifactId>
     <packaging>ear</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.magicvalleyworks.magicblog</groupId>
-            <artifactId>magic-blog-app-web</artifactId>
+            <artifactId>magic-blog-web</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>com.magicvalleyworks.magicblog</groupId>
-            <artifactId>magic-blog-app-service</artifactId>
+            <artifactId>magic-blog-service</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>ejb</type>
         </dependency>
@@ -49,7 +49,7 @@
                         register our War as a web module and set the contextRoot property -->
                         <webModule>
                             <groupId>com.magicvalleyworks.magicblog</groupId>
-                            <artifactId>magic-blog-app-web</artifactId>
+                            <artifactId>magic-blog-web</artifactId>
                             <contextRoot>/magic-blog</contextRoot>
                         </webModule>
                     </modules>
