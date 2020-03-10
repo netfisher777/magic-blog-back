@@ -21,6 +21,13 @@ public class BlogPostsController {
         return blogPostBean.getBlogPosts();
     }
 
+    @GET
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public BlogPost getBlogPost(@PathParam(value = "id") Integer id) {
+        return blogPostBean.getBlogPost(id);
+    }
+
     @POST
     @Path("/")
     @Consumes(MediaType.APPLICATION_JSON)

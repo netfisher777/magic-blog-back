@@ -1,5 +1,10 @@
 <jboss-deployment-structure>
     <deployment>
         <module-alias name="deployment.magic-blog" />
+        <dependencies>
+            <module name="org.infinispan.cdi.embedded" slot="ispn-10.1" export="true" services="export" />
+            <module name="org.infinispan.jcache" slot="ispn-10.1" export="true" services="export" />
+            <module name="javax.cache.api" slot="ispn-10.1" export="true"/>
+        </dependencies>
     </deployment>
 </jboss-deployment-structure>

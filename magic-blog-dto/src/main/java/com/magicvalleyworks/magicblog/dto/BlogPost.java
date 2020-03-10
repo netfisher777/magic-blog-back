@@ -1,6 +1,8 @@
 package com.magicvalleyworks.magicblog.dto;
 
-public class BlogPost {
+import java.io.Serializable;
+
+public class BlogPost implements Serializable {
     private long id;
     private String author;
     private String message;

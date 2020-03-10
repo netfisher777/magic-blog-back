@@ -7,4 +7,18 @@
 
     <module-name>magic-blog-service</module-name>
 
+    <enterprise-beans>
+        <session>
+            <ejb-name>BlogPostBean</ejb-name>
+            <resource-ref>
+                <res-ref-name>container/blog</res-ref-name>
+                <lookup-name>java:jboss/datagrid-infinispan/container/blog</lookup-name>
+            </resource-ref>
+            <resource-env-ref>
+                <resource-env-ref-name>cache/blog/posts</resource-env-ref-name>
+                <lookup-name>java:jboss/datagrid-infinispan/container/blog/cache/posts</lookup-name>
+            </resource-env-ref>
+        </session>
+    </enterprise-beans>
+
 </ejb-jar>
